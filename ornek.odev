@@ -1,0 +1,44 @@
+private void bKapat_Click(object sender, EvengtArgs e)
+    {
+      this.Close();
+    }
+
+private void bSelam_Click(object sender, EventArgs e)
+    {
+      if (tbAd.Text=="")
+          tbAd.Text="Alper";
+      MessageBox.Show("Merhaba," + tbAd.Text + "!);
+    }
+
+private void bSelamla_MouseHover(object sender, EvengtArgs e)
+    {
+      bSelamla.Left-=10;
+      bSelamla.Width+=20;
+    }
+
+private void bSelamla_MouseLeave(object sender, EvengtArgs e)
+    {
+      bSelamla.Left+=10;
+      bSelamla.Width-=20;
+    }
+
+
+
+
+private void bKpata_MouseEnter(object sender, EvengtArgs e)
+    {
+        Random r= new Random();
+        bKapat.Left=r.Next(0, this.Width-bKapat.Width)
+        bKapat.Top=r.Next(0, this.Height-bKapat.Height)
+    }
+
+private void bKapat_Click(object sender, EvengtArgs e)
+    {
+        this.Close();
+    }
+
+private void Form1_Load(object sender, EvengtArgs e)
+    {
+        Width=1000;
+        Height=700;
+    }
