@@ -1,0 +1,2 @@
+# gorselprogramlamaornekleri
+ders notlarındaki örnekler
